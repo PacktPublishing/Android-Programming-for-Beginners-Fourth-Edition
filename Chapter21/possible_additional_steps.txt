@@ -1,0 +1,25 @@
+To add the additional dependencey follow these steps. Or post the existing code and the error to chatGPT and it to discuss with you.
+
+In the project explorer, browse to Gradle Scripts | build.gradle.kts(App:Module) and double click the file to open it. Locate the depencies section that looks like this: 
+dependencies { 
+
+  ... 
+
+  ... 
+
+} 
+
+Add the following code before the closing curly bracket of the dependencie section. 
+
+implementation(libs.androidx.navigation.compose)  
+
+Now browse to Gradle Scripts | libs.versions.toml and add this code 
+
+androidx-navigation-compose = { group = "androidx.navigation", name =      "navigation-compose", version = "2.9.6" } 
+
+Hover the version number and choose Update to version xxx (whatever is suggested) 
+
+
+Next select Menu | Sync Project with Gradle Files. And if you still have errors, select Menu | Invalidate Caches | Invalidate Caches. This synchronizes all our files with the new dependency we just added. 
+
+In the unlikely event you are still getting errorsI reccomend reading the rest of the chapter and the code and then in Chapter 22 we discuss how to get the full working project in a couple of clicks from GitHub.
