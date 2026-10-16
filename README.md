@@ -75,7 +75,7 @@ To help future-proof your workflow, each chapter also includes optional AI-assis
 
   <li>Jetpack, Composable Functions & Revisiting Hello World</li>
 
-  <li>@Preview and Remember</li>
+  <li>The @Preview Annotation and Remember Keyword</li>
 
   <li>Handling Data with a List & Inputting Data with a TextField</li>
 
